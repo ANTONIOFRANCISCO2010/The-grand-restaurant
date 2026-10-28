@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#171716">
+    <title>THE GRAND RESTAURANT — Alta cozinha em Lisboa</title>
+    <meta name="description" content="Descubra uma experiência de alta cozinha portuguesa contemporânea no THE GRAND RESTAURANT, em Lisboa. Consulte o menu e prepare a sua reserva.">
+    <meta property="og:title" content="THE GRAND RESTAURANT — Alta cozinha em Lisboa">
+    <meta property="og:description" content="A cozinha portuguesa encontra o inesperado. Conheça o menu e prepare a sua próxima visita ao THE GRAND RESTAURANT.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/grand-hero.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="THE GRAND RESTAURANT — início">
+          <span class="brand-main">THE GRAND</span>
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-sub">RESTAURANT</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir navegação" aria-expanded="false" aria-controls="main-navigation" data-menu-toggle>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal" data-navigation>
+          <a href="#inicio">Início</a>
+          <a href="#menu">Menu</a>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#contactos">Contactos</a>
+        </nav>
+        <a class="button button-gold header-reserve" href="#reservas">RESERVAR MESA <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img class="hero-image" src="images/grand-hero.jpg" alt="Prato de autor servido à luz de vela">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span></span>LISBOA · ALTA COZINHA CONTEMPORÂNEA</p>
+          <h1>Uma mesa.<br><em>Uma memória.</em></h1>
+          <p class="hero-description">A cozinha portuguesa encontra o inesperado, num espaço feito para ficar mais um pouco.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#reservas">RESERVAR UMA MESA <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="#menu">EXPLORAR O MENU</a>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#sobre">DESLIZE PARA DESCOBRIR <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="intro section-light" id="sobre">
+        <div class="intro-grid content-width">
+          <figure class="intro-photo reveal">
+            <img src="images/grand-dish.jpg" alt="Polvo de Santa Luzia com pimento assado e ervas">
+            <figcaption>FEITO COM TEMPO, SERVIDO COM CUIDADO</figcaption>
+          </figure>
+          <div class="intro-copy reveal">
+            <p class="eyebrow">A CASA, À NOSSA MANEIRA</p>
+            <h2>O melhor da origem.<br><em>A liberdade do agora.</em></h2>
+            <span class="gold-rule" aria-hidden="true"></span>
+            <p>Acreditamos que uma grande refeição começa muito antes de chegar à mesa. Começa na escolha de quem produz, no respeito à estação e na curiosidade de transformar ingredientes portugueses em algo inesperado.</p>
+            <p>Na cozinha, cada gesto tem intenção. Na sala, cada detalhe convida a abrandar. O resto acontece à mesa.</p>
+            <a class="text-link" href="#menu">CONHEÇA A NOSSA COZINHA <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section section-dark" id="menu">
+        <div class="content-width menu-content">
+          <div class="section-heading reveal">
+            <p class="eyebrow">O MENU</p>
+            <h2>Da estação, <em>com intenção.</em></h2>
+            <p>Uma carta que acompanha o ritmo da natureza e celebra o melhor de cada lugar.</p>
+          </div>
+          <div class="menu-tabs reveal" role="tablist" aria-label="Categorias do menu">
+            <button class="menu-tab is-active" type="button" role="tab" aria-selected="true" data-category="Entradas">ENTRADAS</button>
+            <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="Pratos principais">PRATOS PRINCIPAIS</button>
+            <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="Sobremesas">SOBREMESAS</button>
+          </div>
+          <div class="menu-items" data-menu-items aria-live="polite"></div>
+          <p class="menu-note">A carta e os preços são exemplos de demonstração e podem variar com a estação.</p>
+        </div>
+      </section>
+
+      <section class="gallery-section section-light" id="galeria">
+        <div class="content-width">
+          <div class="gallery-heading reveal">
+            <div>
+              <p class="eyebrow">UM OLHAR À MESA</p>
+              <h2>Pequenos rituais.<br><em>Grandes momentos.</em></h2>
+            </div>
+            <p>Um lugar para saborear sem pressa, brindar sem motivo e voltar sempre.</p>
+          </div>
+          <div class="gallery-grid">
+            <figure class="gallery-card reveal">
+              <img src="images/grand-dish.jpg" alt="Prato de polvo com ervas frescas">
+              <figcaption>O sabor da costa</figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-raised reveal">
+              <img src="images/grand-hero.jpg" alt="Prato de autor numa mesa iluminada">
+              <figcaption>A mesa está posta</figcaption>
+            </figure>
+            <figure class="gallery-card reveal">
+              <img src="images/grand-dish.jpg" alt="Detalhe de um prato de cozinha portuguesa contemporânea">
+              <figcaption>Cada detalhe conta</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation-section section-dark" id="reservas">
+        <div class="reservation-grid content-width">
+          <div class="reservation-copy reveal">
+            <p class="eyebrow">A SUA PRÓXIMA MESA</p>
+            <h2>Há momentos<br>que pedem <em>tempo.</em></h2>
+            <p>Partilhe os detalhes da sua visita e prepare o seu pedido de reserva.</p>
+            <div class="whatsapp-block">
+              <p class="eyebrow">PREFERE FALAR CONNOSCO?</p>
+              <a class="button button-outline whatsapp-link" href="#contactos" data-whatsapp>CONTACTAR POR WHATSAPP <span aria-hidden="true">↗</span></a>
+              <p class="small-note" data-whatsapp-note>Configure o número de WhatsApp real em site.js antes de publicar.</p>
+            </div>
+          </div>
+          <div class="reveal">
+            <form class="reservation-form" data-reservation-form>
+              <label>NOME COMPLETO *
+                <input name="name" type="text" autocomplete="name" placeholder="O seu nome" required>
+              </label>
+              <label>CORREIO ELECTRÓNICO *
+                <input name="email" type="email" autocomplete="email" placeholder="nome@exemplo.pt" required>
+              </label>
+              <label>TELEFONE *
+                <input name="phone" type="tel" autocomplete="tel" placeholder="+351 910 000 000" required>
+              </label>
+              <label>NÚMERO DE PESSOAS
+                <select name="guests">
+                  <option value="1">1 pessoa</option>
+                  <option value="2" selected>2 pessoas</option>
+                  <option value="3">3 pessoas</option>
+                  <option value="4">4 pessoas</option>
+                  <option value="5">5 pessoas</option>
+                  <option value="6">6 pessoas</option>
+                  <option value="7">7 pessoas</option>
+                  <option value="8">8 pessoas</option>
+                </select>
+              </label>
+              <label>DATA *
+                <input name="date" type="date" required>
+              </label>
+              <label>HORA *
+                <select name="time" required>
+                  <option value="">Seleccione uma hora</option>
+                  <option>12:30</option><option>13:00</option><option>13:30</option>
+                  <option>19:00</option><option>19:30</option><option>20:00</option>
+                  <option>20:30</option><option>21:00</option>
+                </select>
+              </label>
+              <label class="form-wide">NOTAS ADICIONAIS
+                <textarea name="notes" rows="3" placeholder="Alergias, ocasiões especiais ou outros detalhes"></textarea>
+              </label>
+              <p class="form-status form-wide" data-form-status role="status" aria-live="polite"></p>
+              <button class="button button-gold form-wide" type="submit">PREPARAR PEDIDO DE RESERVA <span aria-hidden="true">↗</span></button>
+              <p class="small-note form-wide">O formulário abre uma mensagem de WhatsApp quando o número do restaurante estiver configurado. Não confirma automaticamente uma mesa.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-light" id="contactos">
+        <div class="content-width">
+          <div class="section-heading reveal">
+            <p class="eyebrow">ENCONTRE-NOS</p>
+            <h2>Lisboa, <em>à sua espera.</em></h2>
+          </div>
+          <div class="contact-grid reveal">
+            <div class="contact-card">
+              <span class="contact-icon" aria-hidden="true">⌖</span>
+              <h3>MORADA</h3>
+              <p>Lisboa, Portugal<br>Morada a definir</p>
+              <a class="text-link" href="https://maps.google.com/?q=Lisboa%2C+Portugal" target="_blank" rel="noreferrer">VER NO MAPA <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="contact-card">
+              <span class="contact-icon" aria-hidden="true">◷</span>
+              <h3>HORÁRIO</h3>
+              <p>Terça a sábado<br>12:30–15:00 · 19:00–23:00</p>
+              <p class="contact-muted">Encerrado ao domingo e à segunda-feira.</p>
+            </div>
+            <div class="contact-card">
+              <span class="contact-icon" aria-hidden="true">↗</span>
+              <h3>FALE CONNOSCO</h3>
+              <p>Número e correio electrónico<br>a definir</p>
+              <a class="text-link whatsapp-link" href="#contactos" data-whatsapp>ESCREVA-NOS NO WHATSAPP <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner content-width">
+        <a class="footer-brand" href="#inicio">THE GRAND RESTAURANT</a>
+        <nav aria-label="Navegação de rodapé">
+          <a href="#menu">MENU</a><a href="#sobre">A CASA</a><a href="#reservas">RESERVAS</a><a href="#contactos">CONTACTOS</a>
+        </nav>
+      </div>
+      <p class="footer-legal content-width">© 2026 THE GRAND RESTAURANT · Conteúdo e contactos de demonstração.</p>
+    </footer>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+  </body>
+</html>
